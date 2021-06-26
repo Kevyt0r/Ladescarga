@@ -28,6 +28,3 @@ def download():
 		except:
 			download_link = url["formats"][-1]["url"]
 		return redirect(download_link+'&dl=1')
-
-if __name__ == '__main__':
-	app.run(port=80, debug=True)
